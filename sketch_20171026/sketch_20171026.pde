@@ -29,7 +29,7 @@ void draw(){
 
   
   translate(width/2, height/2, 0);
-  scale(1);
+  scale(5);
   rotateY(rY); 
   rotateX(rY); 
   rotateZ(rY); 
@@ -38,9 +38,9 @@ void draw(){
   shape(shape);
   popMatrix();
 
- //saveFrame("line-######.png");
+ saveFrame("line-######.png");
     
-  rY += 0.005;
+  rY += 0.1;
   k += 0.0025;
   r -= 0.005;
   
@@ -51,9 +51,9 @@ void draw(){
 
 PShape GenTextureCloud(PImage _a, PImage _b){
   
-    int dimX = 100;
-    int dimY = 100;
-    int dimZ = 100;  
+    int dimX = 72;
+    int dimY = 72;
+    int dimZ = 72;  
     
     PImage a = _a.get();  
     PImage b = _b.get(); 
@@ -63,7 +63,7 @@ PShape GenTextureCloud(PImage _a, PImage _b){
  
     PShape boxCloud = createShape();
     boxCloud.beginShape(POINTS);
-    boxCloud.strokeWeight(3);
+    boxCloud.strokeWeight(5);
   
   
   
@@ -133,7 +133,6 @@ PShape GenPointCloud(){
 
 //PShape getPointCloud(){
 
-  
 //  PShape boxCloud = createShape();
 //  boxCloud.beginShape(POINTS);
 //  boxCloud.stroke(34,155,215,50);
