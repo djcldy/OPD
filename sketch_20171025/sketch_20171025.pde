@@ -23,13 +23,13 @@ void setup(){
 
 void draw(){
   //background(random(0,255));
-  //background(0); 
+  //background(255); 
   
   pushMatrix();
 
   
-  translate(width/2 + width/2*cos(k), height/4+ width/2*sin(r), 0);
-  scale(5 + 5*sin(r));  
+  translate(width/2, height/2, 0);
+  scale(5 + 25*sin(r));  
   rotateY(rY); 
   rotateX(rY); 
   rotateZ(rY); 

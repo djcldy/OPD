@@ -46,7 +46,7 @@ void draw() {
   rotateX(rY); 
   rotateZ(rY); 
 
-strokeWeight(10);
+strokeWeight(20);
 
   for (int i =0; i < 1000000; i++) {
     float x =int(random(-dimX/2, dimX/2));
